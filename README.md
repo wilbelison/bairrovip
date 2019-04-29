@@ -1,6 +1,8 @@
-#Bairro VIP Generator
+# Bairro VIP Generator
 
-Desenvolvido com ❤ por: Wilbelison Junior no Grupo ZAP
+__DEMO__ http://www.ux2.design/bairrovip
+
+Desenvolvido com ❤ por Wilbelison Junior no Grupo ZAP
 
 ## Desafio
 
@@ -10,13 +12,13 @@ Além de demandar um trabalho bem operacional, repetitivo e demorado por se util
 
 ## Solução
 
-Pensando nessa dor, decidi criar uma ferramenta que automatiza esse processo, agora bastando acessar a plataforma que utiliza PHP como base, preencher um simples formulário anexando as imagens de qualquer tamanho desde que atendendo as dimensões mínimas e automaticamente é gerado um pacote com todos os formatos dos banners em HTML5 zipados para download.
+Pensando nessa dor, decidi criar uma ferramenta que automatiza esse processo, agora bastando acessar página, anexar as imagens de qualquer tamanho desde respeitado as dimensões mínimas e e automaticamente é gerado um pacote com todos os formatos dos banners em HTML5 zipados para download.
 
 Uma solução simples para um problema importante na empresa, já que gera um auto impacto na agilidade do time com ganho de produtividade, sem falar que esse tipo de trabalho operacional acaba sendo tedioso para os designers, que agora ganham mais tempo para investir em trabalhos menos repetitivos e mais criativos, que ficam mais felizes entregando mais valor para empresa.
 
 # Documentação
 
-## Formatos padrões das peças
+## Formatos das peças
 
 - 728x90px
 - 300x250px
@@ -24,15 +26,15 @@ Uma solução simples para um problema importante na empresa, já que gera um au
 
 ### Dimensões das fotografias
 
--  _Peça 728x90px:_ 224×90px
-- _Peça 300x250px:_ 300×110px
-- _Peça 320x100px:_ 150×100px
+-  __Peça 728x90px:__ 224×90px
+- __Peça 300x250px:__ 300×110px
+- __Peça 320x100px:__ 150×100px
 
 ## Dimensões do logo
 
--  _Peça 728x90px:_ 162×90px
-- _Peça 300x250px:_ 280×45px
-- _Peça 320x100px:_ 124×80px
+-  __Peça 728x90px:__ 162×90px
+- __Peça 300x250px:__ 280×45px
+- __Peça 320x100px:__ 124×80px
 
 
 
