@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bairro VIP - {{nome}} - 728 x 90</title>
+	<meta name="ad.size" content="width=728,height=90">
+</head>
+
+<script>
+
+	var clickTag = 'http://www.vivareal.com.br';
+
+	var sources = [{{fotos}}];
+
+</script>
+
+<style>
+
+	#logo {
+
+		background-image: url('logo.png'); 
+
+	}
+
+	body, html {
+
+		padding: 0;
+		margin: 0;
+
+	}
+
+	#banner {
+
+		display: block;
+
+		width: 790px;
+		height: 90px;
+
+	}
+
+
+	#logo, #fotos, #vivareal {
+
+		float: left;
+		height: 90px;
+
+		background-repeat: no-repeat;
+		background-position: center;
+
+	}
+
+	#logo {
+
+		width: 162px;
+		height: 70px;
+		margin: 10px;
+
+		background-size: contain;
+
+	}
+
+	#fotos {
+
+		width: 224px;
+
+		background-size: cover;
+
+	}
+
+	#vivareal {
+
+		width: 312px;
+
+		background-image: url('vivareal.gif'); 
+
+	}
+
+</style>
+
+<body>
+
+<a id="banner" href="javascript:window.open(window.clickTag);">
+
+	<div id="logo"></div>
+	<div id="fotos"></div>
+	<div id="vivareal"></div>
+
+</a>
+
+
+<script>
+
+	var image = new Image();
+	for (i = 0; i < sources.length; i++) { image.src = sources[i]; }
+
+	var fotos = document.getElementById('fotos');
+	fotos.style.backgroundImage = 'url(' + sources[0] + ')';
+
+	var index = 0;
+	setInterval( function() {
+
+		if (index >= sources.length) index = 0;
+		fotos.style.backgroundImage = 'url(' + sources[index] + ')';
+		index ++;
+
+	}, 2100);
+
+
+</script>
+
+</body>
+</html>

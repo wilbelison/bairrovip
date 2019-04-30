@@ -14,7 +14,7 @@
 
         font-family: verdana;
         font-size: 16px;
-        
+
       }
 
     </style>
@@ -44,23 +44,53 @@ function delete_files($target) {
 
 if(isset($_POST['submit'])) {
 
-  include 'libs/ImageResize.php';
+  
 
+  mkdir('temp/728x90/');
+  mkdir('temp/300x250/');
+  mkdir('temp/320x100/');
   // FOTOS RESIZE
 
   $countfiles = count($_FILES['fotos']['name']);
 
   for($i=0;$i<$countfiles;$i++) {
 
-     $filename = $_FILES['fotos']['name'][$i];
-     move_uploaded_file($_FILES['fotos']['tmp_name'][$i],'temp/'.$filename);
+    $filename = $_FILES['fotos']['name'][$i];
+    move_uploaded_file($_FILES['fotos']['tmp_name'][$i],'temp/' . $filename);
+
+   echo 'temp/' . $filename;
+   $image = new ImageResize('temp/' . $filename);
+   $image
+      ->crop(224, 90)
+      ->save('temp/728x90/foto_' . $i . '.jpg', IMAGETYPE_JPEG)
+
+      ->crop(300, 110)
+      ->save('temp/300x250/foto_' . $i . '.jpg', IMAGETYPE_JPEG)
+
+      ->crop(150, 100)
+      ->save('temp/320x100/foto_' . $i . '.jpg', IMAGETYPE_JPEG)
+    ;
+
+    */
   
   }
 
   // LOGO RESIZE
 
   $filename = $_FILES['logo']['name'];
-  move_uploaded_file($_FILES['logo']['tmp_name'],'temp/'.$filename);
+  move_uploaded_file($_FILES['logo']['tmp_name'],'temp/' . $filename);
+
+  $image = new ImageResize('temp/' . $filename);
+  $image
+    ->crop(162, 90)
+    ->save('temp/728x90/logo.png', IMAGETYPE_PNG)
+
+    ->crop(280, 45)
+    ->save('temp/300x250/logo.png', IMAGETYPE_PNG)
+
+    ->crop(124, 80)
+    ->save('temp/320x100/logo.png', IMAGETYPE_PNG)
+  ;
 
 ?>
 
@@ -74,7 +104,7 @@ if(isset($_POST['submit'])) {
 
 <?php } else { ?>
 
-    <form method='post' action='' enctype='multipart/form-data'>
+    <form method="post" action="" enctype="multipart/form-data">
 
       <p>
         <label>Nome:<br />
@@ -101,6 +131,10 @@ if(isset($_POST['submit'])) {
     </form>
 
 <?php } ?>
+
+  <p class="copyright">
+    Desenvolvido com ❤ por <a href="mailto:meustudio@gmail.com">Wilbelison Junior</a>
+  </p>
 
   </body>
 </html>

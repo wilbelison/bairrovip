@@ -24,7 +24,7 @@ Uma solução simples para um problema importante na empresa, já que gera um au
 - 300x250px
 - 320x100px
 
-### Dimensões das fotografias
+## Dimensões das fotografias
 
 -  __Peça 728x90px:__ 224×90px
 - __Peça 300x250px:__ 300×110px
