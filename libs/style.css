@@ -1,0 +1,63 @@
+html, body {
+
+  font-family: verdana;
+  font-size: 16px;
+  color: #333;
+
+  padding: 20px;
+
+  text-align: center;
+
+}
+
+ul {
+  list-style: none;
+}
+
+#arquivos {
+  font-family: monospace;
+  font-size: 12px;
+}
+
+#arquivos .ok {
+  color: #32c800;
+}
+
+#acoes {
+
+  display: block;
+  margin: 0 auto;
+
+}
+
+#acoes li {
+
+  float: left;
+
+}
+
+#copyright {
+
+  display: block;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  font-size: 11px;
+  color: #666;
+  padding: 10px 20px;
+  background-color: #FFF;
+
+}
+
+#copyright i {
+
+  font-size: 11px;
+  color: #ff0066;
+
+}
+
+#copyright a {
+
+  color: #000;
+
+}
