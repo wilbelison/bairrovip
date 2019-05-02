@@ -1,12 +1,13 @@
 html, body {
 
-  font-family: verdana;
+  font-family: 'Open Sans';
   font-size: 16px;
   color: #333;
 
-  padding: 20px;
-
   text-align: center;
+
+  margin: 0;
+  padding: 0;
 
 }
 
@@ -14,38 +15,129 @@ ul {
   list-style: none;
 }
 
-#arquivos {
-  font-family: monospace;
-  font-size: 12px;
+h1 {
+  font-weight: 900;
+  letter-spacing: -2px;
+  color: #FF5A00;
 }
 
-#arquivos .ok {
-  color: #32c800;
+
+input[type='file'], input[type=text] {
+  width: 400px;
+  font-size: 16px;
+  line-height: 18px;
+  padding: 10px;
+  margin: 10px;
+  border: solid 1px #ccc
+}
+
+input[type='file']:focus, input[type=text]:focus {
+  border: solid 1px #999;
+  outline: none;
+}
+
+#enviar {
+  font-size: 18px;
+  padding: 10px 20px;
+
+  text-decoration: none;
+  background-color: #32c800;
+  color: #fff;
+
+  border: solid 0 #32c800;
+  border-radius: 6px;
+
+  text-transform: uppercase;
+
+  font-weight: 700;
+
+  margin-left: 10px;
 }
 
 #acoes {
 
-  display: block;
-  margin: 0 auto;
+  display: inline-block;
+  padding: 20px;
 
 }
 
 #acoes li {
 
   float: left;
+  margin: 10px;
 
 }
 
+#acoes a {
+
+  font-size: 18px;
+  padding: 10px 20px;
+
+  text-decoration: none;
+
+}
+
+#acoes .new a {
+
+  color: #ff0066;
+  font-size: 18px;
+
+}
+
+#acoes .download a {
+
+  background-color: #32c800;
+  color: #fff;
+
+  border: none;
+  border-radius: 6px;
+
+  text-transform: uppercase;
+
+  font-weight: 700;
+
+  margin-left: 10px;
+
+}
+
+#preview {
+
+  position: relative;
+
+  width: 100%;
+  padding: 20px 0;
+
+  background-color: #eee;
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.1) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0.1)), linear-gradient(45deg, rgba(0, 0, 0, 0.1) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0.1));
+  background-size: 20px 20px;
+  background-position: 0 0, 10px 10px;
+
+}
+
+#preview iframe {
+
+  display: absolute;
+
+  margin: 10px auto;
+
+  border: none;
+
+  overflow: hidden;
+
+}
+
+#preview .w728h90 { width: 728px; height: 90px }
+#preview .w300h250 { width: 300px; height: 250px }
+#preview .w320h100 { width: 320px; height: 100px }
+
 #copyright {
 
-  display: block;
-  position: fixed;
-  bottom: 0;
-  right: 0;
   font-size: 11px;
   color: #666;
+
   padding: 10px 20px;
-  background-color: #FFF;
+
+  background-color: #fff;
 
 }
 
