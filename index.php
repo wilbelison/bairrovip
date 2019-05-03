@@ -8,11 +8,13 @@
   </head>
   <body>
 
-    <h1>Bairro VIP Generator</h1>
+    <h1>Bairro VIP Generator <small>beta</small></h1>
 
 <?php
 
-require 'libs/functions.php'; 
+require 'libs/functions.php';
+require 'libs/simpleimage.php';
+
 
 delete_files('temp/');
 
@@ -39,9 +41,9 @@ if(isset($_POST['submit'])) {
     $filesize = $_FILES['fotos']['size'][$i];
     move_uploaded_file($_FILES['fotos']['tmp_name'][$i],'temp/src/' . $filename);
 
-    resize_crop_image(224, 90, 'temp/src/' . $filename, 'temp/728x90/foto_' . $i . '.jpg');
-    resize_crop_image(300, 110, 'temp/src/' . $filename, 'temp/300x250/foto_' . $i . '.jpg');
-    resize_crop_image(150, 100, 'temp/src/' . $filename, 'temp/320x100/foto_' . $i . '.jpg');
+    resize_crop_image(224, 90, 'temp/src/' . $filename, 'temp/728x90/foto_' . $i . '.jpg', IMAGETYPE_JPEG, 100);
+    resize_crop_image(300, 110, 'temp/src/' . $filename, 'temp/300x250/foto_' . $i . '.jpg', IMAGETYPE_JPEG, 100);
+    resize_crop_image(150, 150, 'temp/src/' . $filename, 'temp/320x100/foto_' . $i . '.jpg', IMAGETYPE_JPEG, 100);
 
     $fotos .= "'foto_" . $i . ".jpg'";
 
@@ -57,9 +59,9 @@ if(isset($_POST['submit'])) {
   $filesize = $_FILES['logo']['size'];
   move_uploaded_file($_FILES['logo']['tmp_name'],'temp/src/' . $filename);
 
-  resize_crop_image(172, 90, 'temp/src/' . $filename, 'temp/728x90/logo.png');
-  resize_crop_image(290, 45, 'temp/src/' . $filename, 'temp/300x250/logo.png');
-  resize_crop_image(124, 80, 'temp/src/' . $filename, 'temp/320x100/logo.png');
+  resize_crop_image(172, 90, 'temp/src/' . $filename, 'temp/728x90/logo.png', IMAGETYPE_PNG, 100, true);
+  resize_crop_image(290, 45, 'temp/src/' . $filename, 'temp/300x250/logo.png', IMAGETYPE_PNG, 100, true);
+  resize_crop_image(124, 80, 'temp/src/' . $filename, 'temp/320x100/logo.png', IMAGETYPE_PNG, 100, true);
 
   $nome = $_POST['nome'];
 
@@ -124,6 +126,8 @@ if(isset($_POST['submit'])) {
     <script>document.getElementById('nome').focus();</script>
 
 <?php } ?>
+
+   <a class="documentacao" href="https://github.com/wilbelison/bairrovip" target="_blank"></svg>Documentação</a>
 
   <p id="copyright">Desenvolvido com <i>❤</i> por <a href="http://bit.ly/wilbelison" target="_blank">Wilbelison Junior</a></p>
 

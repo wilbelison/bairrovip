@@ -21,6 +21,13 @@ h1 {
   color: #FF5A00;
 }
 
+h1 small {
+  font-weight: 400;
+  letter-spacing: 0;
+  font-size: 50%;
+  vertical-align: text-top;
+}
+
 
 input[type='file'], input[type=text] {
   width: 400px;
@@ -28,11 +35,17 @@ input[type='file'], input[type=text] {
   line-height: 18px;
   padding: 10px;
   margin: 10px;
-  border: solid 1px #ccc
+  border: solid 1px #ccc;
 }
 
+input[type='file'] {
+  border: dashed 1px #ccc;
+  cursor: pointer;
+}
+
+
 input[type='file']:focus, input[type=text]:focus {
-  border: solid 1px #999;
+  border-color: #999;
   outline: none;
 }
 
@@ -52,6 +65,8 @@ input[type='file']:focus, input[type=text]:focus {
   font-weight: 700;
 
   margin-left: 10px;
+
+  cursor: pointer;
 }
 
 #acoes {
@@ -138,6 +153,14 @@ input[type='file']:focus, input[type=text]:focus {
   padding: 10px 20px;
 
   background-color: #fff;
+
+}
+
+.documentacao {
+
+  font-family: monospace;
+  font-size: 14px;
+  color: #666;
 
 }
 
