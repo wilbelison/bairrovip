@@ -1,7 +1,5 @@
 # Bairro VIP Generator
 
-__DEMO__ http://www.ux2.design/bairrovip
-
 Desenvolvido com ❤ por Wilbelison Junior no Grupo ZAP
 
 ## Desafio
@@ -15,6 +13,16 @@ Além de demandar um trabalho bem operacional, repetitivo e demorado por se util
 Pensando nessa dor, decidi criar uma ferramenta que automatiza esse processo, agora bastando acessar página, anexar as imagens de qualquer tamanho desde respeitado as dimensões mínimas e e automaticamente é gerado um pacote com todos os formatos dos banners em HTML5 zipados para download.
 
 Uma solução simples para um problema importante na empresa, já que gera um auto impacto na agilidade do time com ganho de produtividade, sem falar que esse tipo de trabalho operacional acaba sendo tedioso para os designers, que agora ganham mais tempo para investir em trabalhos menos repetitivos e mais criativos, que ficam mais felizes entregando mais valor para empresa.
+
+#Instalação
+
+- Instale o MAMP em sua máquina https://www.mamp.info/en/downloads/
+
+- Baixe o código do Bairro VIP Generator https://github.com/wilbelison/bairrovip/archive/master.zip
+
+- Descompacte o código em seu servidor PHP e acesse sua pasta atravez do seu browser:
+
+-- Ex.: http://localhost:8888/bairrovip
 
 # Documentação
 

@@ -127,7 +127,9 @@ if(isset($_POST['submit'])) {
 
 <?php } ?>
 
-   <a class="documentacao" href="https://github.com/wilbelison/bairrovip" target="_blank"></svg>Documentação</a>
+  <p>
+    <a class="documentacao" href="https://github.com/wilbelison/bairrovip" target="_blank"></svg>Documentação</a>
+  </p>
 
   <p id="copyright">Desenvolvido com <i>❤</i> por <a href="http://bit.ly/wilbelison" target="_blank">Wilbelison Junior</a></p>
 
