@@ -1,5 +1,7 @@
 # Bairro VIP Generator
 
+![Screenshot](https://raw.githubusercontent.com/wilbelison/bairrovip/master/preview.png)
+
 Desenvolvido com ❤ por Wilbelison Junior no Grupo ZAP
 
 ## Desafio
