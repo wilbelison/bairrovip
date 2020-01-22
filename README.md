@@ -12,9 +12,9 @@ Além de demandar um trabalho bem operacional, repetitivo e demorado por se util
 
 ## Solução
 
-Pensando nessa dor, decidi criar uma ferramenta que automatiza esse processo, agora bastando acessar página, anexar as imagens de qualquer tamanho desde respeitado as dimensões mínimas e e automaticamente é gerado um pacote com todos os formatos dos banners em HTML5 zipados para download.
+Pensando nessa dor, decidi criar uma ferramenta que automatiza esse processo, agora bastando acessar a ferramenta, anexar as imagens de qualquer tamanho desde que respeitado as dimensões mínimas e automaticamente é gerado um pacote com todos os formatos dos banners em HTML5 zipados para download.
 
-Uma solução simples para um problema importante na empresa, já que gera um auto impacto na agilidade do time com ganho de produtividade, sem falar que esse tipo de trabalho operacional acaba sendo tedioso para os designers, que agora ganham mais tempo para investir em trabalhos menos repetitivos e mais criativos, que ficam mais felizes entregando mais valor para empresa.
+Uma solução simples para um grande problema, já que gera um alto impacto na agilidade do time com ganho de produtividade, sem falar que esse tipo de trabalho operacional acaba sendo tedioso para os designers, que agora ganham mais tempo para investir em trabalhos menos repetitivos e mais criativos, que ficam mais felizes entregando mais valor para empresa.
 
 __DEMO:__ https://raw.githubusercontent.com/wilbelison/bairrovip/master/preview.mov
 
@@ -24,7 +24,7 @@ __DEMO:__ https://raw.githubusercontent.com/wilbelison/bairrovip/master/preview.
 
 - Baixe o código do Bairro VIP Generator https://github.com/wilbelison/bairrovip/archive/master.zip
 
-- Descompacte o código em seu servidor PHP e acesse sua pasta atravez do seu browser, Ex.: http://localhost:8888/bairrovip
+- Descompacte o código em seu servidor PHP e acesse sua pasta atraves do seu browser, Ex.: http://localhost:8888/bairrovip
 
 # Documentação
 
